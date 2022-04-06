@@ -1,0 +1,50 @@
+/*
+Owner: Stephanie Scott
+Description: CSS for the Our Bikes page
+File Name: ourBikes.html 
+*/
+
+.bikeCard img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin:0;
+  padding:0;
+}
+.bikeCard{
+  margin: 20px;
+  float: left;
+  box-shadow: 10px 5px 5px grey;
+  width: 30%;
+  background-color: white;
+}
+
+.bikeCardHeader{
+  background: #d4008e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.bikeCardHeader h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.25vw;
+}
+
+
+.bikeCardBody{
+  padding: 0px 20px 10px 20px;
+  min-height: 200px;
+
+}
+.oldPrice{
+  text-decoration: line-through;
+  color: red;
+  padding-left: 10px;
+}
+
+

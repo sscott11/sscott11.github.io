@@ -1,0 +1,105 @@
+/*
+Owner: Stephanie Scott
+Description: CSS for the Contact Us page
+File Name: contact.html 
+*/
+
+#contactUs section{
+  float: left;
+  padding: 20px;
+}
+
+@media (min-width: 1024px) {
+#contactUsSection{
+  width: 55%; float: left;
+}
+}
+@media (min-width: 100px) and (max-width: 1024px) {
+  #contactUsSection{
+    width: 95%!important;
+  }
+  #contactImage{
+    display:none;
+  }
+}
+#contactImage{
+  width: 35%; 
+  float: left; 
+  margin: 20px;
+}
+#contactImage img{
+  width: 100%;
+}
+.contactUsForm{
+  box-shadow: 10px 5px 5px grey;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.contactUsHeader{
+  background: #d4008e;
+  color: white;
+  padding: 10px 15px;
+  font-weight: bold;
+  font-size: 1.25vw;
+  text-align: center;
+}
+
+.contactUsHeader h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1vw;
+}
+
+.contactUsBody {
+  background: white;
+  padding: 20px 60px;
+  height: 100%;
+}
+input[type="text"], input[type="tel"], input[type="email"],textarea{
+  font-size: 16px;
+  line-height: 2;
+  border: none;
+  border-bottom: 1px solid #d4008e;
+  background-color: #ececec;
+  margin-bottom: 10px;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+select{
+  font-size: 16px;
+  line-height: 2;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #d4008e;
+  background-color: #ececec;
+  height: 30px;
+}
+label{
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-right: 20px;
+}
+#ourInfoTable{
+  width: 100%;
+}
+#ourInfoTable td{
+  vertical-align: baseline;
+  padding-bottom: 10px;
+}
+
+#storeHours td{
+  padding-bottom: 0px;
+}
+#storeHours tr >td:first-child{
+  padding-right: 10px;
+  width: 50%;
+}
+.formRadios label{
+  font-weight: normal;
+}
+.formRadios{
+  margin: 0px 0px 10px 20px;
+}

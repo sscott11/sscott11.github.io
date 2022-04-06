@@ -1,0 +1,93 @@
+/*
+Owner: Stephanie Scott
+Description: Main CSS page including Home page
+File Name: index.html 
+*/
+@import "shared.css";
+@import "contact.css";
+@import "ourBikes.css";
+
+
+
+@media (min-width: 1024px) {
+  #productsAndServices{
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    gap: 30px;
+    background-color: #f0d3e3;
+    padding: 30px 30px;
+  }
+}
+@media (min-width: 100px) and (max-width: 1024px) {
+  #productsAndServices{
+    display: grid;
+    grid-template-columns: repeat(1, 95%);
+    justify-content: center; 
+    text-align: center;   
+    gap: 0px;
+    background-color: #f0d3e3;
+    padding: 30px 30px;
+  }
+  .cardTitle{
+    font-size: 20px;
+  }
+}
+.card img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  margin:0;
+  padding:0;
+}
+.card{
+  margin: 10px;
+  float: left;
+  box-shadow: 10px 5px 5px grey;
+  border: solid white 10px;
+}
+.card:hover{
+  border: none;
+}
+.cardTitle{
+  background: #d4008e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+#aboutUsSection{
+  background-color: #161616;
+  color: white;
+  text-align: center;
+  display: flex; 
+  justify-content: center; 
+  padding: 30px; 
+  align-items: center;
+}
+#aboutUsSection h1{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  text-transform: uppercase;
+  margin:0px; 
+  font-size: 3vw; 
+  text-align: right;
+  width: 15%; 
+  text-align: right; 
+  padding-right: 20px;
+}
+#aboutUsSection p{
+    font-size: 1.5vw;
+    line-height: 1.75;
+    margin:0px;
+    width: 75%; 
+    text-align: left; 
+    border-left: solid 1px white; 
+    padding-left: 20px;
+  }
+
+
+
+

@@ -1,0 +1,138 @@
+/*
+Owner: Stephanie Scott
+Description: CSS for Common Elements: Header, Footer, Buttons, etc.*/
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  }
+body{
+ font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ background-color: #f9eaed;
+ margin: 0px;
+}
+header{
+  background-color: #222222;
+  color: white;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+#companyLogo{
+  width: 25%;
+  padding: 15px;
+}
+#navMenu{
+  text-align: center;
+}
+
+#navMenu ul {
+  list-style-type: none;
+  background-color: #161616;
+  padding: 0;
+  margin: 0;
+}
+#navMenu ul > li{
+  display: inline-block;
+  padding: 15px;
+}
+#navMenu a:hover{
+  border-bottom: 5px #d4008e solid;
+}
+
+#navMenu a{
+  color: white;
+  text-decoration: none;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+};
+.dropdown{
+  display: none;
+}
+#breadcrumb{
+  padding: 10px;
+}
+#breadcrumb ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+#breadcrumb ul > li{
+  display: inline-block;
+}
+.currentPage {
+  font-weight: bold;
+}
+.pageHeader{
+  text-align: center;
+  text-transform: uppercase;
+}
+/* Footer */
+
+footer{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  background-color: #222222;
+  color: white;
+  font-size: 1.5vw;
+  width: 100%;
+}
+.footerColumn{
+padding: 10px 30px;
+}
+footer ul{
+padding: 0px;
+}
+footer li{
+list-style: none;
+}
+footer img{
+padding: 5px;
+}
+footer a{
+color: white;
+font-weight: bold;
+text-decoration: none;
+}
+#socialLogos{
+text-align: center;
+font-weight: bold;
+}
+
+
+.primaryButton{
+  background: #d4008e;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+
+}
+.secondaryButton{
+  background: #ebebeb;
+  color: black;
+  border: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+}
+.secondaryButton a{
+  margin: 0;
+  padding: 0;
+}
+
+.flexDisplay{
+  display: flex;
+  justify-content: space-between;
+}

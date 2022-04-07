@@ -12,10 +12,11 @@ File Name: index.html
 @media (min-width: 1024px) {
   #productsAndServices{
     display: grid;
-    grid-template-columns: repeat(3, 32%);
-    gap: 30px;
+    grid-template-columns: repeat(3, 30%);
+    gap: 50px;
     background-color: #f0d3e3;
-    padding: 30px 30px;
+    padding: 50px 30px;
+    justify-content: center;
   }
 }
 @media (min-width: 100px) and (max-width: 1024px) {
@@ -26,7 +27,7 @@ File Name: index.html
     text-align: center;   
     gap: 0px;
     background-color: #f0d3e3;
-    padding: 30px 30px;
+    padding: 50px 30px;
   }
   .cardTitle{
     font-size: 20px;
@@ -38,16 +39,18 @@ File Name: index.html
   object-fit: contain;
   margin:0;
   padding:0;
+  display: block;
 }
 .card{
   margin: 10px;
   float: left;
   box-shadow: 10px 5px 5px grey;
-  border: solid white 10px;
 }
 .card:hover{
   border: none;
+  transform: scale(1.05);
 }
+
 .cardTitle{
   background: #d4008e;
   color: white;
@@ -65,14 +68,14 @@ File Name: index.html
   text-align: center;
   display: flex; 
   justify-content: center; 
-  padding: 30px; 
+  padding: 50px; 
   align-items: center;
 }
 #aboutUsSection h1{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   text-transform: uppercase;
   margin:0px; 
-  font-size: 3vw; 
+  font-size: 3.2vw; 
   text-align: right;
   width: 15%; 
   text-align: right; 
@@ -82,7 +85,7 @@ File Name: index.html
     font-size: 1.5vw;
     line-height: 1.75;
     margin:0px;
-    width: 75%; 
+    width: 60%; 
     text-align: left; 
     border-left: solid 1px white; 
     padding-left: 20px;

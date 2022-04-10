@@ -1,0 +1,88 @@
+/*
+Owner: Stephanie Scott
+Description: CSS for the Events page
+File Name: events.html 
+*/
+
+@media (min-width: 1260px) {
+  #events{
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+  }
+}
+@media (min-width: 920px) and (max-width: 1260px) {
+  #events{
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    justify-content: center; 
+    gap: 0px;
+    padding: 20px;
+  }
+
+}
+@media (min-width: 650px) and (max-width: 920px) {
+  #events{
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    justify-content: center; 
+    gap: 0px;
+    padding: 20px;
+  }
+
+}
+@media (min-width: 100px) and (max-width: 650px) {
+  #events{
+    display: grid;
+    grid-template-columns: repeat(1, 95%);
+    justify-content: center; 
+    gap: 0px;
+    padding: 20px;
+  }
+
+}
+
+.eventCard{
+  border-top: 10px #d4008e solid;
+  margin: 10px;
+  float: left;
+  box-shadow: 10px 5px 5px grey;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.eventCardTitle{
+  padding: 10px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+.eventInformation{
+  padding: 10px 20px;
+  text-align: left;
+  flex-grow: 4;
+}
+.eventCardFooter{
+  padding: 10px 20px;
+  background-color: #ebebeb;
+  text-align: center;
+}
+.eventTable th{
+  padding-right: 10px;
+}
+.eventTable tr{
+  vertical-align: top;
+  line-height: 1.5;
+}
+tr{
+  margin-bottom: 20px;
+
+}
+.eventTable .details{
+  padding-top: 20px;
+  text-align: center;
+}

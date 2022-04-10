@@ -3,22 +3,22 @@ Owner: Stephanie Scott
 Description: CSS for the Events page
 File Name: events.html 
 */
-@media (min-width: 1260px) {
+@media screen and (min-width: 1260px) {
   #events{
     grid-template-columns: repeat(4, 24%);
   }
 }
-@media (max-width: 1259px) and  (min-width: 920px) {
+@media (max-width: 1259px) and (min-width: 920px) {
   #events{
     grid-template-columns: repeat(3, 32%);
   }
 }
-@media (max-width: 919px) and  (min-width: 650px) {
+@media only screen and (max-device-width: 650px) {
   #events{
     grid-template-columns: repeat(2, 47%);
   }
 }
-@media (max-width: 649px) {
+@media only screen and (max-device-width: 480px) {
   #events{
     grid-template-columns: repeat(1, 95%);
   }

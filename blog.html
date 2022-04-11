@@ -5,6 +5,46 @@
   <meta charset="utf-8">
   <title>Vicious Cycles</title>
   <link rel="stylesheet" href="css/styles.css">
+  <style>
+    .blogPost {
+      border-top: 10px #d4008e solid;
+      box-shadow: 10px 5px 5px grey;
+      background-color: white;
+      display: flex;
+      margin: 20px 40px;
+    }
+
+    .blogPost .blogImage {
+      width: 25%;
+      float: left;
+    }
+    .blogImage img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      margin:0;
+      padding:0;
+      display: block;
+    }
+    .blogBody {
+      width: 75%;
+      float: left;
+      padding: 20px;
+    }
+    .blogFooter{
+      text-align: right;
+      padding-top: 20px;
+    }
+    .eventCard {
+      border-top: 10px #d4008e solid;
+      float: left;
+      box-shadow: 10px 5px 5px grey;
+      background-color: white;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+  </style>
 </head>
 
 <body>
@@ -34,64 +74,93 @@
     </nav>
     <h1 class="pageHeader">Blog</h1>
     <div id="ourBikes" style="width: 100%; display: inline-block;">
-      <div id="bike1" class="bikeCard">
-        <div class="bikeCardHeader">
-          <h2>Bianci Model XR52014</h2>
-          <h2>$1,000.00</h2>
+      <div class="blogPost">
+        <div class="blogImage">
+          <img src="img/pexels-biker-driking.jpg" alt="Biker woman drinking water">
         </div>
-        <img src="img/bike1.jpg" alt="Woman riding bike in desert">
-        <div class="bikeCardBody">
-          <a href="#">Show Specs</a>
-          <div style="display: none;">
-          <p>This bike was made for the adventurer in mind. The Bianchi XR52014 is impressively durable,
-            withstanding tough trails with its lightweight, durable frame.</p>
-          <h3>Specifications</h3>
-          <ul>
-            <li>Type: Mountain Bike</li>
-            <li>Sizes: Small, Medium, Large, X-Large</li>
-            <li>Gears: Schimano...</li>
-            <li>Tire Size: 20"</li>
-            <li>Weight: 5.3lbs</li>
-          </ul>
+        <div class="blogBody">
+          <div class="blogTitle"><h2>How to Improve Endurance on Your Ride</h2></div>
+          <div class="blogDate">March 31, 2022</div>
+          <div class="blogContent">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p><br>
+              <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+              </p>
+          </div>
+          <div class="blogFooter">
+            <button class="primaryButton">Share Post</button>
+          </div>
         </div>
-      </div></div>
-
-      <div id="bike2" class="bikeCard">
-        <div class="bikeCardHeader">
-          <h2>Trek Model T5290</h2>
-          <h2>$1,500.00</h2>
+      </div>
+      <div class="blogPost">
+        <div class="blogImage">
+          <img src="img/pexels-biker-driking.jpg" alt="Biker woman drinking water">
         </div>
-        <img src="img/bike2.jpg" alt="Woman riding bike in desert">
-        <div class="bikeCardBody">
-          <h3>Specifications</h3>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
+          <div class="blogBody">
+          <div class="blogTitle"><h2>Graduating to the next level</h2></div>
+          <div class="blogDate">March 28, 2022</div>
+          <div class="blogContent">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p><br>
+            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+            </p>
+          </div>
+          <div class="blogFooter">
+            <button class="primaryButton">Share Post</button>
+          </div>
+        </div>
+      </div>
+      <div class="blogPost">
+        <div class="blogImage">
+          <img src="img/pexels-biker-driking.jpg" alt="Biker woman drinking water">
+        </div>
+        <div class="blogBody">
+          <div class="blogTitle"><h2>Getting the best fit for your bike</h2></div>
+          <div class="blogDate">March 16, 2022</div>
+          <div class="blogContent">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p><br>
+            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+            </p>
+          </div>
+          <div class="blogFooter">
+            <button class="primaryButton">Share Post</button>
+          </div>
+        </div>
+      </div>
+      <div class="blogPost">
+        <div class="blogImage">
+          <img src="img/pexels-biker-driking.jpg" alt="Biker woman drinking water">
+        </div>
+        <div class="blogBody">
+          <div class="blogTitle"><h2>Top Trails in the Raleigh Area</h2></div>
+          <div class="blogDate">March 12, 2022</div>
+          <div class="blogContent">
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p><br>
+            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
+              Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. 
+              Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+            </p>
+          </div>
+          <div class="blogFooter">
+            <button class="primaryButton">Share Post</button>
+          </div>
         </div>
       </div>
 
-      <div id="bike3" class="bikeCard">
-        <div class="bikeCardHeader">
-          <h2>Cannondale Model 2901</h2>
-          <h2>$1,250.00</h2>
-        </div>
-        <img src="img/bike3.jpg" alt="Woman riding bike in desert">
-        <div class="bikeCardBody">
-          <h3>Specifications</h3>
-          <p>$1,000.00<span class="oldPrice">$1,400</span></p>
-          <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul>
-        </div>
-      </div>
+
     </div>
   </main>
   <footer>

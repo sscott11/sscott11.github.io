@@ -21,7 +21,8 @@ header{
   text-align: center;
 }
 #companyLogo{
-  width: 350px;
+  width: 400px;
+  height: auto;
   padding: 15px;
 }
 #navMenu{
@@ -46,7 +47,7 @@ header{
   color: white;
   text-decoration: none;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
 };
 .dropdown{
@@ -78,7 +79,7 @@ footer{
   align-items: center;
   background-color: #222222;
   color: white;
-  font-size: 1.5vw;
+  font-size: 16px;
   width: 100%;
 }
 .footerColumn{
@@ -105,7 +106,7 @@ font-weight: bold;
 
 
 .primaryButton{
-  background: #d4008e;
+  background-color: #d4008e;
   color: white;
   border: none;
   padding: 10px 15px;
@@ -114,7 +115,7 @@ font-weight: bold;
   font-size: 16px;
   text-align: center;
   text-decoration: none;
-
+  cursor: pointer;
 }
 .secondaryButton{
   background: #ebebeb;

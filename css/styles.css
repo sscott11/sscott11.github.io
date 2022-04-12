@@ -15,6 +15,7 @@ File Name: index.html
   }
 main{
   display: inline-block;
+  width: 100%;
 }
 @media (min-width: 1024px) {
   #productsAndServices{

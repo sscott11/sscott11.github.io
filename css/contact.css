@@ -8,6 +8,9 @@ File Name: contact.html
   float: left;
   padding: 20px;
 }
+main{
+  display: inline-block;
+}
 
 @media (min-width: 1024px) {
 #contactUsSection{

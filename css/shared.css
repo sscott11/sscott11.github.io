@@ -3,11 +3,6 @@ Owner: Stephanie Scott
 Description: CSS for Common Elements: Header, Footer, Buttons, etc.*/
 
 
-
-* {
-  margin: 0;
-  padding: 0;
-  }
 body{
  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  background-color: #f9eaed;
@@ -74,12 +69,11 @@ header{
 /* Footer */
 
 footer{
-  display: flex;
-  justify-content:space-between;
-  align-items: center;
+  padding: 20px 0px;
+  text-align: center;
   background-color: #222222;
   color: white;
-  font-size: 16px;
+  font-size: 24px;
   width: 100%;
 }
 .footerColumn{

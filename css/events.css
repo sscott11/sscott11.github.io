@@ -3,12 +3,8 @@ Owner: Stephanie Scott
 Description: CSS for the Events page
 File Name: events.html 
 */
-@media screen and (min-width: 1260px) {
-  #events{
-    grid-template-columns: repeat(4, 24%);
-  }
-}
-@media (max-width: 1259px) and (min-width: 920px) {
+
+@media (min-width: 920px) {
   #events{
     grid-template-columns: repeat(3, 32%);
   }
@@ -23,11 +19,12 @@ File Name: events.html
     grid-template-columns: repeat(1, 95%);
   }
 }
-#events{
-  display: grid;
-  padding: 20px;
-  justify-content: center;
-  gap: 10px;
+#events {
+    display: grid;
+    margin: 20px auto;
+    width: 80%;
+    justify-content: center;
+    gap: 10px;
 }
 .eventCard{
   border-top: 10px #d4008e solid;

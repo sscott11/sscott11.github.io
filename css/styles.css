@@ -7,12 +7,15 @@ File Name: index.html
 @import "contact.css";
 @import "ourBikes.css";
 @import "events.css";
+@import "blog.css";
 
 * {
   margin: 0;
   padding: 0;
   }
-
+main{
+  display: inline-block;
+}
 @media (min-width: 1024px) {
   #productsAndServices{
     display: grid;

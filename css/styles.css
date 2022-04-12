@@ -31,12 +31,12 @@ File Name: index.html
     padding: 50px 30px;
   }
   .cardTitle{
-    width: 640px;
-    font-size: 42px!important;
+    width: 500px;
+    font-size: 36px!important;
   }
   .imgWrapper{
-    height: 400px;
-    width:640px;
+    height: 300px;
+    width: 500px;
   }
   #aboutUsSection{
     display: flex;
@@ -44,7 +44,14 @@ File Name: index.html
   }
   #aboutUsSection p{
     text-align: center!important;
-    border: none !important;;
+    border: none !important;
+    padding-bottom: 20px;
+    width: 100%!important;
+    padding: 20px;
+  }
+  #aboutUsSection h1{
+    width: 100%!important;
+    text-align: center!important;
   }
 }
 

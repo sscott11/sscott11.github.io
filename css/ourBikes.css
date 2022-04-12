@@ -3,20 +3,40 @@ Owner: Stephanie Scott
 Description: CSS for the Our Bikes page
 File Name: ourBikes.html 
 */
-
-.bikeCard img{
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  margin:0;
-  padding:0;
+main{
+  display: inline-block;
+}
+@media screen and (min-width: 1260px) {
+  #ourBikes{
+    grid-template-columns: repeat(3, 32%);
+  }
+}
+@media (max-width: 1259px) and (min-width: 600px) {
+  #ourBikes{
+    grid-template-columns: repeat(2, 47%);
+  }
+}
+@media only screen and (max-device-width: 600px) {
+  #ourBikes{
+    grid-template-columns: repeat(1, 95%);
+  }
+}
+#ourBikes{
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 .bikeCard{
-  margin: 20px;
-  float: left;
   box-shadow: 10px 5px 5px grey;
-  width: 30%;
   background-color: white;
+  justify-self: center;
+}
+.bikeCard img{
+  width: 100%;
+  object-fit: cover;
+  margin:0;
+  padding:0;
 }
 
 .bikeCardHeader{
@@ -26,25 +46,17 @@ File Name: ourBikes.html
   padding: 10px 15px;
   display: flex;
   justify-content: space-between;
-
 }
-
 .bikeCardHeader h2 {
   text-transform: uppercase;
   font-weight: bold;
-  font-size: 1.25vw;
+  font-size: 20px;
 }
-
-
 .bikeCardBody{
   padding: 0px 20px 10px 20px;
-  min-height: 200px;
+  min-height: 150px;
 
 }
-.oldPrice{
-  text-decoration: line-through;
-  color: red;
-  padding-left: 10px;
+.bikeCardBody ul{
+  margin-left: 20px;
 }
-
-

@@ -4,6 +4,10 @@ Description: CSS for the Contact Us page
 File Name: contact.html 
 */
 
+#contactUsBody {
+    margin: 20px auto;
+    width: 80%;
+}
 #contactUs section{
   float: left;
   padding: 20px;

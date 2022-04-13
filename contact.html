@@ -18,13 +18,31 @@
   </header>
   <nav id="navMenu">
     <ul>
-      <li><a href="ourBikes.html">Products</a></li>
-      <li><a href="ourServices.html">Services</a></li>
-      <li><a href="events.html">Events</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
+        <li class="dropdown">
+            <a href="ourBikes.html">Shop Our Products <span class="dropdownArrow">▼</span></a>
+            <ul class="dropdown-content">
+                <li><a href="ourBikes.html">Our Bikes</a></li>
+                <li><a href="ourGear.html">Our Apparel</a></li>
+            </ul>
+        </li>
+        <li><a href="ourServices.html">Our Services</a></li>
+        <li class="dropdown">
+          <a href="events.html">Community <span class="dropdownArrow">▼</span></a>
+          <ul class="dropdown-content">
+              <li><a href="events.html">Upcoming Events</a></li>
+              <li><a href="blog.html">Our Blog</a></li>
+              <li><a href="https://oaksandspokes.com/" target="_blank">Oaks & Spokes (External)</a></li>
+          </ul>
+      </li>
+      <li class="dropdown">
+        <a href="contact.html">Contact <span class="dropdownArrow">▼</span></a>
+        <ul class="dropdown-content">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="https://goo.gl/maps/SHPzcojnDMgMXf7F6" target="_blank">Directions (External)</a></li>
+        </ul>
+    </li>
     </ul>
-  </nav>
+</nav>
   <main id="contactUs">
     <nav id="breadcrumb">
       <ul>
@@ -34,67 +52,112 @@
     </nav>
     <h1 class="pageHeader">Contact Us</h1>
     <div id="contactUsBody">
-        <div id="contactImage">
-            <img src="img/bikePink.jpg" alt="pink bike in front of pink flowering tree">
+      <section id="ourHours">
+        <div class="contactUsForm">
+          <div class="contactUsHeader">
+            <h2>Contact Our Store</h2>
+          </div>
+          <div class="contactUsBody">
+            <ul id="contactAddress">
+              <li><b>Vicious Cycles</b></li>
+              <li>1200 Hillsborough Street</li>
+              <li>Raleigh, NC 27607</li>
+              <li>(919)491-9999</li>
+              <li><a href="mailto:contact@viciouscycles.com">contact@viciouscycles.com</a></li>
+            </ul>
+            
+          <table>
+            <caption>Our Hours</caption>
+          <tr>
+            <th>Monday:</td>
+            <td>10AM - 9PM</td>
+          </tr>
+          <tr>
+            <th>Tuesday:</td>
+            <td>10AM - 9PM</td>
+          </tr>
+          <tr>
+            <th>Wednesday:</td>
+            <td>10AM - 9PM</td>
+          </tr>
+          <tr>
+            <th>Thursday:</td>
+            <td>10AM - 9PM</td>
+          </tr>
+          <tr>
+            <th>Friday:</td>
+            <td>10AM - 9PM</td>
+          </tr>
+          <tr>
+            <th>Saturday:</td>
+            <td>7AM - 9PM</td>
+          </tr>
+          <tr>
+            <th>Sunday:</td>
+            <td>12PM - 6PM</td>
+          </tr>
+          </table>
+          </div>
         </div>
-        <section id="contactUsSection">
-            <div class="contactUsForm">
-                <div class="contactUsHeader">
-                    <h2>Contact Form</h2>
-                </div>
-                <div class="contactUsBody">
-                    <p>
-                        <b>Instructions: </b><br>Complete and submit the following form and someone will be in touch with you
-                        within 24
-                        hours.
-                    </p><br>
-                    <form id="customerContactForm" method="post" action="">
-                        <label for="requestorName">Your Name</label><br>
-                        <input id="requestorName" name="requestorName" type="text"><br>
-                        <label for="phoneNumber">Phone Number</label><br>
-                        <input id="phoneNumber" name="phoneNumber" type="tel"><br>
-                        <label for="email">Email Address</label><br>
-                        <input id="email" name="email" type="email"><br>
-                        <label>What is your preferred contact method?</label><br>
-                        <div class="formRadios">
-                            <input id="emailContact" type="radio" name="contactMethod">
-                            <label for="emailContact">Email</label>
-                            <input id="phoneContact" type="radio" name="contactMethod">
-                            <label for="phoneContact">Call</label>
-                            <input id="textContact" type="radio" name="contactMethod">
-                            <label for="textContact">Text</label><br>
-                        </div>
-                        <label>What can we help you with?</label><br>
-                        <div class="formRadios">
-                            <input id="productInquiry" type="checkbox" name="reasonForContact" value="productInquiry">
-                            <label for="productInquiry">Products</label><br>
-                            <input id="services" type="checkbox" name="reasonForContact" value="services">
-                            <label for="services">Bike Services</label><br>
-                            <input id="signUp" type="checkbox" name="reasonForContact" value="signUp">
-                            <label for="signUp">Sign Up for Event</label><br>
-                            <input id="other" type="checkbox" name="reasonForContact" value="other">
-                            <label for="other">Something Else</label><br>
-                        </div>
-                        <label for="comments">Comments</label><br>
-                        <textarea id="comments" name="comments" rows="3" cols="50"></textarea><br>
-                        <label for="source">How did you hear about us?</label><br>
-                        <select id="source" name="source">
-                            <option>Select One</option>
-                            <option value="1">Saw our store</option>
-                            <option value="2">Search Engine (e.g. Google)</option>
-                            <option value="3">Social Media</option>
-                            <option value="4">TV/Radio</option>
-                            <option value="5">Word of Mouth</option>
-                            <option value="6">Other</option>
-                        </select>
-                        <hr />
-                        <br>
-                        <button type="submit" class="primaryButton">Submit</button>
-                        <a href="index.html" class="secondaryButton">Cancel</a>
-                    </form>
-                </div>
-            </div>
-        </section>
+      </section>
+      <section id="contactUsSection">
+        <div class="contactUsForm">
+          <div class="contactUsHeader">
+            <h2>Contact Us Online</h2>
+          </div>
+          <div class="contactUsBody">
+            <p>
+              <b>Instructions: </b><br>Complete and submit the following form and someone will be in touch with you
+              within 24
+              hours.
+            </p><br>
+            <form id="customerContactForm" method="post" action="">
+              <label for="requestorName">Your Name</label><br>
+              <input id="requestorName" name="requestorName" type="text"><br>
+              <label for="phoneNumber">Phone Number</label><br>
+              <input id="phoneNumber" name="phoneNumber" type="tel"><br>
+              <label for="email">Email Address</label><br>
+              <input id="email" name="email" type="email"><br>
+              <label>What is your preferred contact method?</label><br>
+              <div class="formRadios">
+                <input id="emailContact" type="radio" name="contactMethod">
+                <label for="emailContact">Email</label>
+                <input id="phoneContact" type="radio" name="contactMethod">
+                <label for="phoneContact">Call</label>
+                <input id="textContact" type="radio" name="contactMethod">
+                <label for="textContact">Text</label><br>
+              </div>
+              <label>What can we help you with?</label><br>
+              <div class="formRadios">
+                <input id="productInquiry" type="checkbox" name="reasonForContact" value="productInquiry">
+                <label for="productInquiry">Products</label><br>
+                <input id="services" type="checkbox" name="reasonForContact" value="services">
+                <label for="services">Bike Services</label><br>
+                <input id="signUp" type="checkbox" name="reasonForContact" value="signUp">
+                <label for="signUp">Sign Up for Event</label><br>
+                <input id="other" type="checkbox" name="reasonForContact" value="other">
+                <label for="other">Something Else</label><br>
+              </div>
+              <label for="comments">Comments</label><br>
+              <textarea id="comments" name="comments" rows="3" cols="50"></textarea><br>
+              <label for="source">How did you hear about us?</label><br>
+              <select id="source" name="source">
+                <option>Select One</option>
+                <option value="1">Saw our store</option>
+                <option value="2">Search Engine (e.g. Google)</option>
+                <option value="3">Social Media</option>
+                <option value="4">TV/Radio</option>
+                <option value="5">Word of Mouth</option>
+                <option value="6">Other</option>
+              </select>
+              <hr />
+              <br>
+              <button type="submit" class="primaryButton">Submit</button>
+              <a href="index.html" class="secondaryButton">Cancel</a>
+            </form>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
   <footer>

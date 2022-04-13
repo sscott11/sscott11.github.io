@@ -1,0 +1,52 @@
+/*
+Owner: Stephanie Scott
+Description: CSS for the Our Services page
+File Name: ourServices.html 
+*/
+@media (min-width: 650px) {
+  #serviceMenu{
+    width: 60%;
+  }
+}
+@media only screen and (max-device-width: 650px) {
+  #serviceMenu{
+    width: 100%;
+  }
+}
+
+    #ourServices {
+      margin: 20px auto;
+      width: 80%;
+    }
+
+    #serviceMenu {
+      border-top: 10px #d4008e solid;
+      box-shadow: 10px 5px 5px grey;
+      background-color: white;
+      padding: 20px;
+      width: 60%;
+      margin: 0 auto;
+    }
+
+    .serviceItem {
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      background-color: #eec5e0;
+      color: black;
+      border-radius: 10px;
+      margin: 10px 0px;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .serviceItem:hover {
+      background-color: #d4008e;
+      color: white;
+
+    }
+    #questions{
+      text-align: center;
+      padding-top: 20px;
+      font-size: 18px;
+    }

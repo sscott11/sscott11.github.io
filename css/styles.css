@@ -8,6 +8,7 @@ File Name: index.html
 @import "ourBikes.css";
 @import "events.css";
 @import "blog.css";
+@import "services.css";
 
 * {
   margin: 0;

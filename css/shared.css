@@ -33,6 +33,13 @@ header{
   display: inline-block;
   padding: 15px 20px;
 }
+#navMenu a {     
+  display: inline-block;     
+  position: relative;    
+  z-index: 1;     
+  padding: 1em;     
+  margin: -1em; 
+}
 
 #navMenu li:hover {
  background-color: #d4008e;
@@ -44,12 +51,26 @@ header{
   font-size: 20px;
   font-weight: bold;
 }
+.dropdownArrow{
+  font-size: 14px;
+}
 .dropdown-content {
     display: none;
     position: absolute;
     top: 132px;
-    background-color: rgba(0, 0, 0, .6) !important;
+    background-color: white!important;
     z-index: 1;
+    box-shadow: 10px 5px 5px grey;
+}
+.dropdown-content a {
+  color: black!important;
+}
+.dropdown-content li:hover {
+  background-color: white!important;
+  color: #d4008e!important;
+}
+.dropdown-content a:hover {
+  color: #d4008e!important;
 }
 
 .dropdown:hover .dropdown-content {

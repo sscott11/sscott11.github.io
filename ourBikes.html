@@ -18,13 +18,31 @@
   </header>
   <nav id="navMenu">
     <ul>
-      <li><a href="ourBikes.html">Products</a></li>
-      <li><a href="ourServices.html">Services</a></li>
-      <li><a href="events.html">Events</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
+        <li class="dropdown">
+            <a href="ourBikes.html">Shop Our Products <span class="dropdownArrow">▼</span></a>
+            <ul class="dropdown-content">
+                <li><a href="ourBikes.html">Our Bikes</a></li>
+                <li><a href="ourGear.html">Our Apparel</a></li>
+            </ul>
+        </li>
+        <li><a href="ourServices.html">Our Services</a></li>
+        <li class="dropdown">
+          <a href="events.html">Community <span class="dropdownArrow">▼</span></a>
+          <ul class="dropdown-content">
+              <li><a href="events.html">Upcoming Events</a></li>
+              <li><a href="blog.html">Our Blog</a></li>
+              <li><a href="https://oaksandspokes.com/" target="_blank">Oaks & Spokes (External)</a></li>
+          </ul>
+      </li>
+      <li class="dropdown">
+        <a href="contact.html">Contact <span class="dropdownArrow">▼</span></a>
+        <ul class="dropdown-content">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="https://goo.gl/maps/SHPzcojnDMgMXf7F6" target="_blank">Directions (External)</a></li>
+        </ul>
+    </li>
     </ul>
-  </nav>
+</nav>
   <main>
     <nav id="breadcrumb">
       <ul>
@@ -36,7 +54,7 @@
     <div id="ourBikes">
       <div class="bikeCard">
         <div class="bikeCardHeader">
-          <h2>Bianci Sprint</h2>
+          <h2>Bianchi Sprint</h2>
           <h2>$1,000.00</h2>
         </div>
         <img src="img/bike1.jpg" alt="Image of Road Bike">

@@ -2,32 +2,9 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <title>Vicious Cycles</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <style>
-        #serviceMenu {
-            border-top: 10px #d4008e solid;
-            box-shadow: 10px 5px 5px grey;
-            background-color: white;
-            margin: 20px auto;
-            width: 80%;
-        }
-        #serviceMenu table{
-            width: 100%;
-            font-size: 24px;
-        }
-            #serviceMenu td, #serviceMenu th {
-                padding: 10px;
-            }
-            #serviceMenu th {
-                text-align: left;
-            }
-        #serviceMenu h2{
-            text-align: center;
-            padding: 20px 0px;
-        }
-    </style>
+  <meta charset="utf-8">
+  <title>Vicious Cycles</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
@@ -41,11 +18,29 @@
   </header>
   <nav id="navMenu">
     <ul>
-      <li><a href="ourBikes.html">Products</a></li>
-      <li><a href="ourServices.html">Services</a></li>
-      <li><a href="events.html">Events</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li class="dropdown">
+        <a href="ourBikes.html">Shop Our Products <span class="dropdownArrow">▼</span></a>
+        <ul class="dropdown-content">
+          <li><a href="ourBikes.html">Our Bikes</a></li>
+          <li><a href="ourGear.html">Our Apparel</a></li>
+        </ul>
+      </li>
+      <li><a href="ourServices.html">Our Services</a></li>
+      <li class="dropdown">
+        <a href="events.html">Community <span class="dropdownArrow">▼</span></a>
+        <ul class="dropdown-content">
+          <li><a href="events.html">Upcoming Events</a></li>
+          <li><a href="blog.html">Our Blog</a></li>
+          <li><a href="https://oaksandspokes.com/" target="_blank">Oaks & Spokes (External)</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="contact.html">Contact <span class="dropdownArrow">▼</span></a>
+        <ul class="dropdown-content">
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="https://goo.gl/maps/SHPzcojnDMgMXf7F6" target="_blank">Directions (External)</a></li>
+        </ul>
+      </li>
     </ul>
   </nav>
   <main>
@@ -56,46 +51,43 @@
       </ul>
     </nav>
     <h1 class="pageHeader">Our Services</h1>
-    <div id="serviceMenu">
-        <h2>Menu of Services & Pricing</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Service</th>
-                    <th>Cost</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Bike Tune-Up
-                    
-                    </td>
-                    <td>$50.00</td>
-                </tr>
-                <tr>
-                    <td>Bike Fitting</td>
-                    <td>FREE</td>
-                </tr>
-                <tr>
-                    <td>Helmet Fitting</td>
-                    <td>FREE</td>
-                </tr>
-                <tr>
-                    <td>Wheel Repair</td>
-                    <td>$25/wheel</td>
-                </tr>
-                <tr>
-                    <td>Brake Repair</td>
-                    <td>$50 + parts</td>
-                </tr>
-                <tr>
-                    <td>Gear Tune-up</td>
-                    <td>$25</td>
-                </tr>
-            </tbody>
+    <div id="ourServices">
 
-        </table>
-
+      <div id="serviceMenu">
+        <div class="serviceItem">
+          <p id="serviceDescription">Bicycle Tune-Up</p>
+          <p id="servicePrice">$50.00</p>
+        </div>
+        <div class="serviceItem">
+          <p id="serviceDescription">Wheel Repair</p>
+          <p id="servicePrice">$25/wheel</p>
+        </div>
+        <div class="serviceItem">
+          <p id="serviceDescription">Tire Repair</p>
+          <p id="servicePrice">$20/tire</p>
+        </div>
+        <div class="serviceItem">
+          <p id="serviceDescription">Tube Replacement</p>
+          <p id="servicePrice">$10/tire</p>
+        </div>
+        <div class="serviceItem">
+          <p id="serviceDescription">Brake Repair</p>
+          <p id="servicePrice">$50 p/brake</p>
+        </div>
+        <div class="serviceItem">
+          <p id="serviceDescription">Gears/Chain Tune-up</p>
+          <p id="servicePrice">$25</p>
+        </div>
+        <div class="serviceItem">
+          <p id="serviceDescription">Bike Fitting</p>
+          <p id="servicePrice">Always FREE</p>
+        </div>
+        <div class="serviceItem">
+          <p id="serviceDescription">Helmet Fitting</p>
+          <p id="servicePrice">Always FREE</p>
+        </div>
+          <p id="questions"><b>Questions about our Services?</b><br> Give us a call or visit the store for more information.</p>
+      </div>
     </div>
   </main>
   <footer>

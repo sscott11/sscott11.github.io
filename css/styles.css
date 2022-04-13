@@ -62,6 +62,9 @@ main{
         text-align: center !important;
         padding: 0px !important;
     }
+    #joinTheCommunity{
+      width: 300px;
+    }
 }
 
 #productsAndServices a{
@@ -145,4 +148,19 @@ main{
   padding:0;
   display: block;
 }
-
+#upcomingEvents{
+  position: relative;
+}
+#joinTheCommunity{
+  position: absolute; 
+  left: 70px; 
+  top: 60px;   
+  background-color: rgba(0, 0, 0, .5); 
+  padding: 30px;
+  border-radius: 10px;
+}
+#joinTheCommunity h2{
+  color: white; 
+  font-weight: normal;
+  font-size: 40px;
+}

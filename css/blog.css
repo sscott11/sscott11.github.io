@@ -3,6 +3,14 @@ Owner: Stephanie Scott
 Description: CSS for the Blog page
 File Name: blog.html 
 */
+@media (min-width: 100px) and (max-width: 1024px) {
+  .blogImage{
+    display: none;
+  }
+  .blogBody {
+    width: 100%;
+  }
+}
 #blog {
     margin: 20px auto;
     width: 80%;

@@ -31,7 +31,12 @@ File Name: contact.html
   width: 30%; 
   float: left; 
 }
-
+#viciousCyclesLogo{
+  width: 60%;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
 #ourHours table{
   width: 250px;
   text-align: left;

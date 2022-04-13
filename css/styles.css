@@ -60,6 +60,9 @@ main{
     #joinTheCommunity h2{
       font-size: 18px!important;
     }
+    #joinTheCommunity .primaryButton{
+       font-size: 12px;
+    }
 }
 
 #productsAndServices a{

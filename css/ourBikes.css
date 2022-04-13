@@ -7,21 +7,21 @@ main{
   display: inline-block;
 }
 @media screen and (min-width: 1260px) {
-  #ourBikes{
+  .ourProducts {
     grid-template-columns: repeat(3, 32%);
   }
 }
 @media (max-width: 1259px) and (min-width: 600px) {
-  #ourBikes{
+  .ourProducts {
     grid-template-columns: repeat(2, 47%);
   }
 }
 @media only screen and (max-device-width: 600px) {
-  #ourBikes{
+  .ourProducts {
     grid-template-columns: repeat(1, 95%);
   }
 }
-#ourBikes {
+.ourProducts {
     display: grid;
     justify-content: center;
     gap: 20px;

@@ -161,6 +161,10 @@ font-weight: bold;
   margin: 0;
   padding: 0;
 }
+.buttonRow{
+  margin: 20px 0px 10px 0px;
+  text-align: center;
+}
 
 .flexDisplay{
   display: flex;

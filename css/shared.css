@@ -2,7 +2,11 @@
 Owner: Stephanie Scott
 Description: CSS for Common Elements: Header, Footer, Buttons, etc.*/
 
-
+@media only screen and (max-width: 600px) {
+  #companyLogo{
+    width: 80%!important;
+  }
+}
 body{
  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
  background-color: #f9eaed;
@@ -110,6 +114,7 @@ footer{
   color: white;
   font-size: 24px;
   width: 100%;
+  overflow-wrap: break-word;
 }
 .footerColumn{
 padding: 10px 30px;

@@ -16,9 +16,9 @@ main{
     grid-template-columns: repeat(2, 47%);
   }
 }
-@media only screen and (max-device-width: 600px) {
+@media (max-width: 600px) {
   .ourProducts {
-    grid-template-columns: repeat(1, 95%);
+    grid-template-columns: repeat(1, 95%)!important;
   }
 }
 .ourProducts {

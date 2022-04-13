@@ -8,9 +8,9 @@ File Name: ourServices.html
     width: 60%;
   }
 }
-@media only screen and (max-device-width: 650px) {
+@media (max-width: 650px) {
   #serviceMenu{
-    width: 100%;
+    width: 90%!important;
   }
 }
 

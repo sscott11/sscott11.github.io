@@ -31,24 +31,19 @@ main{
 
 @media (min-width: 100px) and (max-width: 1024px) {
   #productsAndServices{
-    display: grid;
-    grid-template-columns: repeat(1, 95%);
-    justify-content: center; 
-    text-align: center;   
-    gap: 20px;
-    padding: 50px 0px;
-  }
-  .cardTitle{
-    width: 500px;
-    font-size: 36px!important;
-  }
-  .imgWrapper{
-    height: 300px;
-    width: 500px;
+    display: grid!important;;
+    grid-template-columns: repeat(1, 95%)!important;
+    justify-content: center!important;
+    text-align: center!important;
+    gap: 20px!important;
+    padding: 50px 0px!important;
   }
   #aboutUsWrapper{
-    display: flex;
-    flex-direction: column;
+    display: flex!important;;
+    flex-direction: column!important;;
+  }
+  .imgWrapper{
+    height: 250px!important;
   }
 
     #aboutUsSection p {
@@ -62,8 +57,8 @@ main{
         text-align: center !important;
         padding: 0px !important;
     }
-    #joinTheCommunity{
-      width: 300px;
+    #joinTheCommunity h2{
+      font-size: 18px!important;
     }
 }
 
@@ -153,10 +148,10 @@ main{
 }
 #joinTheCommunity{
   position: absolute; 
-  left: 70px; 
-  top: 60px;   
+  left: 5%; 
+  top:  5%;   
   background-color: rgba(0, 0, 0, .5); 
-  padding: 50px;
+  padding: 3%;
   border-radius: 10px;
 }
 #joinTheCommunity h2{
